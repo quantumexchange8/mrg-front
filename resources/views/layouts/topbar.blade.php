@@ -21,34 +21,35 @@
                 <ul id="navbar-navlist" class="navbar-nav">
                     <!-- Home Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="http://mrg-landingnew.test/#home">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
 
                     <!-- Services Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="http://mrg-landingnew.test/#services">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
 
                     <!-- Blog Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="http://mrg-landingnew.test/#blog">Blog</a>
+                        <a class="nav-link" href="#blog">Blog</a>
                     </li>
 
-
+                    <!-- About Us Page Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    
                     <!-- Contact Us Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="http://mrg-landingnew.test/#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
 
                     <!-- Faq Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="http://mrg-landingnew.test/#faq">Faq</a>
+                        <a class="nav-link" href="#faq">Faq</a>
                     </li>
 
-                    <!-- About Us Page Link -->
-                    <li class="nav-item {{ Route::is('about') ? 'active' : ' ' }}">
-                        <a class="nav-link" href="{{ route('about') }}">About</a>
-                    </li>
+
                 </ul>
             </div>
 
