@@ -50,12 +50,12 @@
                         <ul class="flex flex-col gap-3">
                             <h5 class="xl:text-xl lg:text-lg font-semibold text-default-200 mb-2">Quick Link</h5>
                             <li>
-                                <a href="{{ route('about') }}"
+                                <a href="#about"
                                     class="inline-flex items-center gap-2 text-base font-semibold text-default-100 hover:text-primary transition-all"><i
                                         data-lucide="circle-slash" class="inline-block h-4 w-4"></i> About</a>
                             </li>
                             <li>
-                                <a href="http://mrg-landingnew.test/#contact"
+                                <a href="#contact"
                                     class="inline-flex items-center gap-2 text-base font-semibold text-default-100 hover:text-primary transition-all"><i
                                         data-lucide="circle-slash" class="inline-block h-4 w-4"></i> Contact</a>
                             </li>
