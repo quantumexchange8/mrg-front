@@ -101,10 +101,8 @@
 
             <p>Hello,</p>
 
-            <p>We received a request to reset your password. Click the button below to reset it. If you didn’t request this, please ignore this email.</p>
-
             <div class="important-info">
-                <p><strong>Note:</strong> This password reset link will expire in 60 minutes.</p>
+                <p>We received a request to reset your password. Click the button below to reset it. If you didn’t request this, please ignore this email.</p>
             </div>
 
             <a href="{{ route('reset', ['token' => $user->remember_token]) }}" class="cta-button">Reset Password</a>

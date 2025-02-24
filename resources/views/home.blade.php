@@ -501,7 +501,7 @@
                     </div>
                 </div><!-- end grid-col -->
 
-                <div style="background-image: url('assets/images/industry-served/4.jpg');"
+                <div style="background-image: url('assets/images/industry-served/finance.jpg');"
                     class="sm:col-start-3 sm:col-span-2 md:col-start-2 md:col-span-2 relative flex items-center bg-cover bg-left-bottom bg-default-600/40 p-2 rounded-lg h-28 sm:h-72"
                     data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
 
@@ -510,7 +510,7 @@
                     </div>
                 </div><!-- end grid-col -->
 
-                <div style="background-image: url('assets/images/industry-served/5.jpg');"
+                <div style="background-image: url('assets/images/industry-served/healthcare.jpg');"
                     class="sm:col-start-2 sm:col-span-2 md:col-start-4 md:col-span-2 relative flex items-center bg-cover bg-center bg-default-600/40 p-2 rounded-lg h-28 sm:h-72"
                     data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
 
@@ -782,7 +782,7 @@
     <!-- Start -->
     <section class="" id="contact" data-aos="zoom-in" data-aos-easing="ease" data-aos-duration="1000">
         <div class="container px-0 sm:px-16 md:px-20">
-            <div class="sm:border sm:rounded-2xl bg-slate-950/40 bg-cover bg-center"
+            <div class="sm:rounded-2xl bg-slate-950/40 bg-cover bg-center"
                 style="background-image: url(assets/images/contact/1.jpg);">
                 <div class="p-6 bg-default-950/80 sm:rounded-2xl">
                     <div>

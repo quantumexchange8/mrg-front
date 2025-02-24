@@ -22,9 +22,9 @@
         }
 
         h1 {
-            color: #d9534f;
+            color: #7c2074;
             font-size: 24px;
-            border-bottom: 2px solid #d9534f;
+            border-bottom: 2px solid #7c2074;
             padding-bottom: 10px;
         }
 
@@ -66,14 +66,12 @@
 
 <body>
     <div class="container">
-        <h1>New Contact from {{ $name }}</h1>
-        <p><strong>Email: </strong>{{ $email }}</p>
+        <h1>New Contact from <strong> {{ $name }} <strong></h1>
+        <p><strong>Email: </strong> {{ $email }} </p>
 
         <div class="item-details">
             <p><strong>Message:</strong> {{ $userMessage }}</p>
         </div>
-
-        <p class="footer">This is an automated message. Please do not reply.</p>
     </div>
 </body>
 

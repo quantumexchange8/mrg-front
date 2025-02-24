@@ -23,13 +23,13 @@
         </div>
     </div><!-- end body bg gradient -->
 
-    <section id="login" class="flex items-center py-6 px-0 lg:p-10 w-full lg:h-screen">
+    <section id="login" class="flex items-center py-36 lg:px-0 lg:p-10 w-full lg:h-screen">
         <div class="container">
             <div class="backdrop-blur-2xl bg-default-950/40 rounded-2xl overflow-hidden max-w-5xl mx-auto">
                 <div class="grid lg:grid-cols-2 gap-10">
                     <div class="hidden lg:block ps-4 py-4">
                         <div class="relative rounded-xl overflow-hidden h-full w-full">
-                            <img src="assets/images/ai/auth-img.jpg" alt=""
+                            <img src="assets/images/auth/auth-img.jpg" alt=""
                                 class="w-full h-full transform -scale-x-100">
                             <div class="absolute inset-0 bg-default-950/40">
                             </div>

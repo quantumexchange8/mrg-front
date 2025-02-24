@@ -122,7 +122,6 @@ class UserController extends Controller
             }
         }
 
-
         return view('Auth/forgotpassword');
     }
 

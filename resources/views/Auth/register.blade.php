@@ -29,7 +29,7 @@
                 <div class="grid lg:grid-cols-2 gap-10">
                     <div class="hidden lg:block ps-4 py-4">
                         <div class="relative rounded-xl overflow-hidden h-full w-full">
-                            <img src="assets/images/ai/auth-img.jpg" alt=""
+                            <img src="assets/images/auth/auth-img.jpg" alt=""
                                 class="w-full h-full transform -scale-x-100">
                             <div class="absolute inset-0 bg-default-950/40">
                             </div>
