@@ -7,7 +7,7 @@
         <title>MRG Tech</title>
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/logo/mrglogo.png">
 
         <!-- Style css -->
         <link href="{{ asset('assets/css/style.min.css')}}" rel="stylesheet" type="text/css">

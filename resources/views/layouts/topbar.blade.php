@@ -1,9 +1,13 @@
+@php
+    use Illuminate\Support\Facades\Auth;
+@endphp
+
 <header id="navbar-sticky" class="navbar">
     <div class="container">
         <nav>
             <!-- Navbar Brand Logo -->
-            <a href="http://mrg-landingnew.test/#home" class="logo">
-                <img src="assets/images/logo.png" class="h-10" alt="WebAi Logo">
+            <a href="#home" class="logo">
+                <img src="assets/images/logo/mrglogo-white.png" class="h-10 w-20" alt="WebAi Logo">
             </a>
 
             <!-- Moblie Menu Toggle Button (Offcanvas Button) -->
@@ -21,34 +25,52 @@
                 <ul id="navbar-navlist" class="navbar-nav">
                     <!-- Home Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="{{ route('home') }}#home">Home</a>
                     </li>
 
                     <!-- Services Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="{{ route('home') }}#services">Services</a>
                     </li>
 
                     <!-- Blog Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link" href="{{ route('home') }}#blog">Blog</a>
                     </li>
 
                     <!-- About Us Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="{{ route('home') }}#about">About</a>
                     </li>
-                    
+
                     <!-- Contact Us Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="{{ route('home') }}#contact">Contact</a>
                     </li>
 
                     <!-- Faq Page Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">Faq</a>
+                        <a class="nav-link" href="{{ route('home') }}#faq">FAQ</a>
                     </li>
 
+                    <!-- Login Page Link -->
+
+                    @if (Auth::check())
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logout') }}"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+                        </li>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}#login">Login</a>
+                        </li>
+                    @endif
 
                 </ul>
             </div>

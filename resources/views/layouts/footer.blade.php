@@ -1,45 +1,36 @@
 <footer class="bg-default-950/40 backdrop-blur-3xl">
-    <div class="container lg:px-0">
+    <div class="container lg:px-4">
         <div class="flex flex-col lg:flex-row justify-between gap-14 py-24">
             <div class="lg:w-3/12">
                 <a href="#" class="flex items-center gap-2 logo">
-                    <img src="assets/images/logo.png" class="w-36" alt="">
+                    <img src="assets/images/logo/mrglogo-white@3x.png" class="w-36" alt="">
                 </a>
 
-                <p class="text-default-200 text-sm font-medium max-w-xs mt-6">Start working with Tailwindcss It allows
-                    you to compose complex designs by combining and customizing utility classes.</p>
-                <h5 class="text-default-200 text-base font-semibold mb-4 mt-6">Follow Us :</h5>
-                <ul class="flex flex-wrap items-center gap-1">
-                    <li>
-                        <a href="javascript:void(0);"
-                            class="h-8 w-8 inline-flex items-center justify-center border border-white/10 rounded-md transition-all duration-500 group hover:bg-primary"><i
-                                data-lucide="facebook" class="h-4 w-4 text-default-300 group-hover:text-white"></i></a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);"
-                            class="h-8 w-8 inline-flex items-center justify-center border border-white/10 rounded-md transition-all duration-500 group hover:bg-primary"><i
-                                data-lucide="instagram" class="h-4 w-4 text-default-300 group-hover:text-white"></i></a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);"
-                            class="h-8 w-8 inline-flex items-center justify-center border border-white/10 rounded-md transition-all duration-500 group hover:bg-primary"><i
-                                data-lucide="twitter" class="h-4 w-4 text-default-300 group-hover:text-white"></i></a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);"
-                            class="h-8 w-8 inline-flex items-center justify-center border border-white/10 rounded-md transition-all duration-500 group hover:bg-primary"><i
-                                data-lucide="linkedin" class="h-4 w-4 text-default-300 group-hover:text-white"></i></a>
-                    </li>
-                </ul>
+                <p class="text-default-200 text-sm font-medium max-w-xs mt-6">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Reprehenderit quidem, tenetur qui culpa ducimus eligendi voluptatem dolorem, ad
+                    velit fugit placeat, nostrum hic sint facere. Reprehenderit aut perspiciatis eius rerum.</p>
             </div>
 
-            <div class="lg:w-8/12">
-                <div class="grid md:grid-cols-2 sm:grid-cols-2 gap-6">
+            <div class="lg:w-5/12">
+                <div>
+                    <h5 class="xl:text-xl lg:text-lg font-semibold text-default-200 mb-2">Location</h5>
+                    <div style="padding-bottom: 50%; position: relative;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3473115.940082111!2d-9.790845258558623!3d31.778264163271064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMorocco!5e0!3m2!1sen!2smy!4v1740361065445!5m2!1sen!2smy"
+                            width="1200" height="750" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full left-0 top-0 absolute"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-4/12">
+                <div class="grid md:grid-cols-3 sm:grid-cols-3 gap-6">
                     <div>
                         <ul class="flex flex-col gap-3">
                             <h5 class="xl:text-xl lg:text-lg font-semibold text-default-200 mb-2">Resources</h5>
                             <li>
-                                <a href="http://mrg-landingnew.test/#blog"
+                                <a href="#blog"
                                     class="inline-flex items-center gap-2 text-base font-semibold text-default-100 hover:text-primary transition-all"><i
                                         data-lucide="circle-slash" class="inline-block h-4 w-4"></i> Blogs</a>
                             </li>

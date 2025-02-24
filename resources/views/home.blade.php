@@ -599,10 +599,10 @@
     </section>
     <!-- End -->
 
-    <!-- Hero Section Start -->
-    <section id="about" class="relative overflow-hidden pt-[72px] sm:pb-8" data-aos="zoom-out" data-aos-easing="ease"
-        data-aos-duration="1000">
-        <div class="">
+    <!-- About Section Start -->
+    <section id="about" class="relative overflow-hidden pt-[72px] sm:pb-8" data-aos="zoom-out"
+        data-aos-easing="ease" data-aos-duration="1000">
+        <div>
             <div class="overflow-hidden bg-no-repeat bg-cover bg-center"
                 style="background-image: url(assets/images/about/1.webp);">
                 <div class="bg-default-950/70">
@@ -654,7 +654,7 @@
     <!-- Hero end  -->
 
     <!-- Start Core Value -->
-    <section class="pb-12 sm:py-12" data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
+    <section class="sm:py-12" data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
         <div class="container p-0 sm:p-10 lg:p-20">
             <div class="flex hidden items-end justify-between mb-10 md:block">
                 <div class="max-w-2xl mx-auto text-center">
@@ -780,7 +780,7 @@
     </section>
 
     <!-- Start -->
-    <section class="py-24" id="contact" data-aos="zoom-in" data-aos-easing="ease" data-aos-duration="1000">
+    <section class="" id="contact" data-aos="zoom-in" data-aos-easing="ease" data-aos-duration="1000">
         <div class="container px-0 sm:px-16 md:px-20">
             <div class="sm:border sm:rounded-2xl bg-slate-950/40 bg-cover bg-center"
                 style="background-image: url(assets/images/contact/1.jpg);">
@@ -842,7 +842,23 @@
                         <div class="lg:col-span-6 col-span-2 mt-10">
                             <div class="bg-neutral-500/40 rounded-xl lg:w-3/4 xl:w-1/2 lg:mx-auto">
                                 <div class="p-10">
-                                    <form class="space-y-2 mb-6">
+                                    @if (session('success'))
+                                        <div id="success-message">
+                                            <div class="bg-green-400 opacity-85 p-4 rounded">
+                                                <p class="text-white bold text-lg">{{ session('success') }}</p>
+                                            </div>
+                                        </div>
+                                    @endif
+                                    <script>
+                                        setTimeout(function() {
+                                            const successMessage = document.getElementById('success-message');
+                                            if (successMessage) {
+                                                successMessage.style.display = 'none';
+                                            }
+                                        }, 3000);
+                                    </script>
+                                    <form class="space-y-2 mb-6" action="{{ route('sendContact') }}" method="POST">
+                                        @csrf
                                         <label for="name" class="text-base text-white">Name: </label>
                                         <div class="relative pb-4">
                                             <input type="text" id="name"

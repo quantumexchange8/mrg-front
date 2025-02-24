@@ -32,22 +32,14 @@
                             <img src="assets/images/ai/auth-img.jpg" alt=""
                                 class="w-full h-full transform -scale-x-100">
                             <div class="absolute inset-0 bg-default-950/40">
-                                <div class="flex items-end justify-center h-full">
-                                    <div class="p-6 text-start">
-                                        <h5 class="text-xl font-bold text-white mb-3">Is the best way, <br> to build your
-                                            marketing strategy!</h5>
-                                        <p class="text-base font-medium text-default-500">Try all paid functions for free.
-                                            just register and create your first widget, it simple and fast.</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div><!-- end gri-cols -->
 
                     <div class="flex flex-col h-full p-10 lg:ps-0">
                         <div class="pb-10">
-                            <a href="http://mrg-landingnew.test/#home" class="flex">
-                                <img src="assets/images/logo.png" alt="dark logo" class="h-10">
+                            <a href="{{ route('home') }}" class="flex">
+                                <img src="assets/images/logo/mrglogo-white.png" alt="dark logo" class="h-10">
                             </a>
                         </div>
                         <div class="pb6 my-auto">
@@ -56,13 +48,17 @@
                                 account.</p>
 
                             <!-- form -->
-                            <form action="#" class="text-start">
+                            <form action="{{ route('storeUser') }}" method="POST" class="text-start">
+                                @csrf
                                 <div class="mb-4">
                                     <label for="input-label"
                                         class="block text-base/normal font-semibold text-default-200 mb-2">Your Name</label>
-                                    <input type="text" id="input-label"
+                                    <input type="text" id="input-label" name="name"
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
-                                        placeholder="Your Name">
+                                        placeholder="Your Name" required>
+                                    @error('name')
+                                        <div class="text-red-500">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <div class="mb-4">
                                     <label for="emailaddress"
@@ -70,7 +66,11 @@
                                         address</label>
                                     <input
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
-                                        type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                        type="email" name="email" id="emailaddress" placeholder="Enter your email"
+                                        required>
+                                    @error('email')
+                                        <div class="text-red-500">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <!-- end email input -->
                                 <div class="mb-4">
@@ -78,7 +78,11 @@
                                         class="block text-base/normal font-semibold text-default-200 mb-2">Password</label>
                                     <input
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
-                                        type="password" required="" id="password" placeholder="Enter your password">
+                                        type="password" name="password" id="password" placeholder="Enter your password"
+                                        required>
+                                    @error('password')
+                                        <div class="text-red-500">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <!-- end password input -->
                                 <div class="mb-6">
@@ -96,39 +100,12 @@
                                 </div>
                             </form><!-- end form-->
                         </div>
-                        <div>
-                            <div class="text-center">
-                                <p class="text-lg text-default-200 font-semibold mb-4">Sign in with</p>
-                                <ul class="flex flex-wrap items-center justify-center gap-2">
-                                    <li>
-                                        <a href="javascript:void(0);"
-                                            class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-white/20 rounded-lg transition-all duration-500 group hover:bg-blue-600/60"><i
-                                                class="mdi mdi-facebook text-2xl text-white group-hover:text-white"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);"
-                                            class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-white/20 rounded-lg transition-all duration-500 group hover:bg-pink-600/60"><i
-                                                class="mdi mdi-instagram text-2xl text-white group-hover:text-white"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);"
-                                            class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-white/20 rounded-lg transition-all duration-500 group hover:bg-blue-800/60"><i
-                                                class="mdi mdi-linkedin text-2xl text-white group-hover:text-white"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);"
-                                            class="h-10 w-10 inline-flex items-center justify-center backdrop-blur-2xl bg-white/20 rounded-lg transition-all duration-500 group hover:bg-default-600/60"><i
-                                                class="mdi mdi-github text-2xl text-white group-hover:text-white"></i></a>
-                                    </li>
-                                </ul><!-- end social -->
-                            </div>
-                        </div>
                     </div> <!-- end col -->
                 </div> <!-- end grid -->
             </div> <!-- end bg -->
             <div class="w-full text-center mt-5">
                 <p class="text-default-300 leading-6 text-base font-medium">Already have an account? <a
-                        href="auth-login.html" class="text-primary font-semibold ms-1">Sign In</a></p>
+                        href="{{ route('login') }}" class="text-primary font-semibold ms-1">Sign In</a></p>
             </div>
         </div><!-- end container -->
     </section><!-- end section -->
