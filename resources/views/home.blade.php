@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('content')
+    @cookieconsentview
     <section id="home" class="relative pt-[74px] overflow-hidden">
         <div class="container-fluid lg:px-10 md:px-3 relative overflow-hidden">
             <div class="lg:py-24 py-[74px] md:rounded-lg shadow bg-default-950/40 backdrop-blur-3xl">
@@ -54,6 +55,29 @@
             </div><!--end -->
         </div><!--end container fluid-->
     </section>
+
+
+    @if (session('contactSent'))
+        <div id="success-message"
+            class="fixed top-20 left-1/2 transform z-10 -translate-x-1/2 bg-green-500 text-white text-lg px-6 py-4 rounded-lg shadow-lg flex items-center space-x-2 transition-opacity duration-500 opacity-90">
+            <p>{{ session('contactSent') }}</p>
+        </div>
+    @elseif(session('success'))
+        <div id="success-message"
+            class="fixed top-20 left-1/2 transform z-10 -translate-x-1/2 bg-green-500 text-white text-lg px-6 py-4 rounded-lg shadow-lg flex items-center space-x-2 transition-opacity duration-500 opacity-90">
+            <p>{{ session('success') }}</p>
+        </div>
+    @endif
+
+
+    <script>
+        setTimeout(function() {
+            const successMessage = document.getElementById('success-message');
+            if (successMessage) {
+                successMessage.style.display = 'none';
+            }
+        }, 3000);
+    </script>
 
     <!-- Start features -->
     <section id="features" class="py-10 md:py-20">
@@ -811,7 +835,7 @@
                                         <i data-lucide="phone" class="h-8 w-8 text-white"></i>
                                     </div>
                                     <p class="text-base text-default-300 font-medium lg:max-w-md mx-auto pl-2">
-                                        <a href="tel:+212123456789">+212123456789</a>
+                                        <a href="tel:+0668105106">+06681051069</a>
                                     </p>
                                 </div>
 
@@ -842,21 +866,6 @@
                         <div class="lg:col-span-6 col-span-2 mt-10">
                             <div class="bg-neutral-500/40 rounded-xl lg:w-3/4 xl:w-1/2 lg:mx-auto">
                                 <div class="p-10">
-                                    @if (session('success'))
-                                        <div id="success-message">
-                                            <div class="bg-green-400 opacity-85 p-4 rounded">
-                                                <p class="text-white bold text-lg">{{ session('success') }}</p>
-                                            </div>
-                                        </div>
-                                    @endif
-                                    <script>
-                                        setTimeout(function() {
-                                            const successMessage = document.getElementById('success-message');
-                                            if (successMessage) {
-                                                successMessage.style.display = 'none';
-                                            }
-                                        }, 3000);
-                                    </script>
                                     <form class="space-y-2 mb-6" action="{{ route('sendContact') }}" method="POST">
                                         @csrf
                                         <label for="name" class="text-base text-white">Name: </label>
@@ -1190,12 +1199,12 @@
                                     </li>
                                     <li>
                                         <p class="text-default-300 text-sm font-medium">Phone Number: <a
-                                                href="tel:+212123456789"
-                                                class="underline decoration-solid">+212123456789</a></p>
+                                                href="tel:+0668105106" class="underline decoration-solid">+0668105106</a>
+                                        </p>
                                     </li>
                                     <li>
                                         <p class="text-default-300 text-sm font-medium">Website: <a
-                                                href="https://www.mrgtech.com"
+                                                href="{{ route('home') }}"
                                                 class="underline decoration-solid">www.mrgtech.com</a></p>
                                     </li>
                             </div>

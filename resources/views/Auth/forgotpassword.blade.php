@@ -42,6 +42,15 @@
                                 <img src="assets/images/logo/mrglogo-white.png" alt="dark logo" class="h-10">
                             </a>
                         </div>
+
+                        @if (session('success'))
+                            <div id="success-message">
+                                <div class="bg-green-400 opacity-85 p-4 rounded">
+                                    <p class="text-white bold text-lg">{{ session('success') }}</p>
+                                </div>
+                            </div>
+                        @endif
+
                         @if ($errors->has('error'))
                             <div id="error-message">
                                 <div class="bg-red-400 opacity-85 p-4 rounded">
@@ -51,10 +60,25 @@
                                 </div>
                             </div>
                         @endif
+
+                        <script>
+                            setTimeout(function() {
+                                const successMessage = document.getElementById('success-message');
+                                if (successMessage) {
+                                    successMessage.style.display = 'none';
+                                }
+                            }, 3000);
+
+                            setTimeout(function() {
+                                const errMessage = document.getElementById('error-message');
+                                if (errMessage) {
+                                    errMessage.style.display = 'none';
+                                }
+                            }, 3000);
+                        </script>
                         <div class="my-auto">
                             <h4 class="text-2xl font-bold text-white mb-3">Forgot Password?</h4>
-                            <p class="text-default-300 mb-8 max-w-sm">Enter your email address and password to access
-                                account.</p>
+                            <p class="text-default-300 mb-8 max-w-sm">Enter your email address to receive the reset link.</p>
 
                             <!-- form -->
                             <form action="{{ route('handleForgotPW') }}" method="POST" class="text-start">
@@ -72,7 +96,7 @@
                                 <div class="text-center">
                                     <button
                                         class="w-full inline-flex items-center justify-center px-6 py-2 backdrop-blur-2xl bg-primary-600/90 text-white rounded-lg transition-all duration-500 group hover:bg-primary-600 mt-5"
-                                        type="submit"><span class="fw-bold">Log In</span> </button>
+                                        type="submit"><span class="fw-bold">Send</span> </button>
                                 </div>
                             </form><!-- end form-->
                         </div>

@@ -84,6 +84,9 @@ class UserController extends Controller
             $user->remember_token = Str::random(40);
             $user->save();
             Mail::to($user->email)->send(new ForgotPassword($user));
+            return redirect()->route('forgotPW')->with([
+                'success' => 'Please check your email to reset the password',
+            ]);
         } else {
             return redirect()->route('forgotPW')->withErrors([
                 'error' => 'The email is not found',
@@ -100,7 +103,9 @@ class UserController extends Controller
             return view('Auth/reset', $data);
         }
 
-        return view('Auth/forgotpassword');
+        return redirect()->route('forgotPW')->withErrors([
+            'error' => 'The reset link has been expired',
+        ]);
     }
 
     public function handleReset($token, Request $request)
@@ -117,13 +122,14 @@ class UserController extends Controller
                 $user->remember_token = Str::random(40);
                 $user->save();
                 return redirect()->route('login')->with('success', 'Password has been successfully reset.');
-            }else{
+            } else {
                 return redirect()->back()->with('error', 'Password and Confirm Password are not matched.');
             }
         }
 
-        return view('Auth/forgotpassword');
-    }
+        return redirect()->route('forgotPW')->withErrors([
+            'error' => 'The reset link has been expired',
+        ]);    }
 
 
     public function destroy(Request $request): RedirectResponse

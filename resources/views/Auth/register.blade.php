@@ -44,8 +44,7 @@
                         </div>
                         <div class="pb6 my-auto">
                             <h4 class="text-2xl font-bold text-white mb-4">Get Started Now</h4>
-                            <p class="text-default-300 mb-8 max-w-sm ">Enter your email address and password to access
-                                account.</p>
+                            <p class="text-default-300 mb-8 max-w-sm ">Join us for innovative IT solutions and success!</p>
 
                             <!-- form -->
                             <form action="{{ route('storeUser') }}" method="POST" class="text-start">
@@ -85,14 +84,6 @@
                                     @enderror
                                 </div>
                                 <!-- end password input -->
-                                <div class="mb-6">
-                                    <input type="checkbox"
-                                        class="h-4 w-4 rounded text-primary border-white/20 bg-white/20 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary/60 focus:ring-offset-0"
-                                        id="checkbox-signin">
-                                    <label class="ms-2 text-default-200 align-middle" for="checkbox-signin">Remember
-                                        me</label>
-                                </div>
-                                <!-- end checkbox input -->
                                 <div class="mb-6 text-center">
                                     <button
                                         class="w-full inline-flex items-center justify-center px-6 py-2 backdrop-blur-2xl bg-primary-600/90 text-white rounded-lg transition-all duration-500 group hover:bg-primary-600 mt-5"

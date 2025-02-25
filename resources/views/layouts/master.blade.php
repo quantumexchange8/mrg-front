@@ -5,18 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>MRG Tech</title>
+        @cookieconsentscripts
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/logo/mrglogo.png">
+        <link rel="shortcut icon" href="{{asset('assets/images/logo/mrglogo.png')}}">
 
         <!-- Style css -->
         <link href="{{ asset('assets/css/style.min.css')}}" rel="stylesheet" type="text/css">
 
         <!-- Icons css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="{{ asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css">
 
         <!-- Animation on Scroll css -->
-        <link href="assets/libs/aos/aos.css" rel="stylesheet" type="text/css">
+        <link href="{{ asset('assets/libs/aos/aos.css')}}" rel="stylesheet" type="text/css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

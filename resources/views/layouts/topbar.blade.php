@@ -7,7 +7,7 @@
         <nav>
             <!-- Navbar Brand Logo -->
             <a href="#home" class="logo">
-                <img src="assets/images/logo/mrglogo-white.png" class="h-10 w-20" alt="WebAi Logo">
+                <img src="{{ asset('assets/images/logo/mrglogo-white.png')}}" class="h-10 w-20" alt="WebAi Logo">
             </a>
 
             <!-- Moblie Menu Toggle Button (Offcanvas Button) -->
