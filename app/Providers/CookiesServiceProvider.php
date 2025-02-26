@@ -25,11 +25,11 @@ class CookiesServiceProvider extends ServiceProvider
         //        anonymizeIp: env('GOOGLE_ANALYTICS_ANONYMIZE_IP'),
         //    );
 
-        // Register custom cookies under the pre-existing "optional" category:
-        Cookies::optional()
-            ->name('darkmode_enabled')
-            ->description('This cookie helps us remember your preferences regarding the interface\'s brightness.')
-            ->duration(120)
-            ->accepted(fn(Consent $consent, MyDarkmode $darkmode) => $consent->cookie(value: $darkmode->getDefaultValue()));
+        // // Register custom cookies under the pre-existing "optional" category:
+        // Cookies::optional()
+        //     ->name('darkmode_enabled')
+        //     ->description('This cookie helps us remember your preferences regarding the interface\'s brightness.')
+        //     ->duration(120)
+        //     ->accepted(fn(Consent $consent, MyDarkmode $darkmode) => $consent->cookie(value: $darkmode->getDefaultValue()));
     }
 }
