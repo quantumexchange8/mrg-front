@@ -6,9 +6,11 @@
                     <img src="assets/images/logo/mrglogo-white@3x.png" class="w-36" alt="">
                 </a>
 
-                <p class="text-default-200 text-sm font-medium max-w-xs mt-6">Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Reprehenderit quidem, tenetur qui culpa ducimus eligendi voluptatem dolorem, ad
-                    velit fugit placeat, nostrum hic sint facere. Reprehenderit aut perspiciatis eius rerum.</p>
+                <p class="text-default-200 text-sm font-medium max-w-xs mt-6">MRG Tech is dedicated to redefining how
+                    companies operate with creative, automated, and engaging technology-enabled solutions. Consistent
+                    with our mission of being customer-focused, efficient, and environmentally sustainable, we empower
+                    businesses to scale through intelligent, flexible solutions that optimize processes, enhance user
+                    experiences, and speed up future-proof digital transformation.</p>
             </div>
 
             <div class="lg:w-5/12">

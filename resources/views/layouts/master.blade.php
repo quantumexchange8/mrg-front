@@ -8,7 +8,7 @@
         @cookieconsentscripts
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{asset('assets/images/logo/mrglogo.png')}}">
+        <link rel="shortcut icon" href="{{asset('assets/images/logo/tablogo.png')}}">
 
         <!-- Style css -->
         <link href="{{ asset('assets/css/style.min.css')}}" rel="stylesheet" type="text/css">

@@ -28,19 +28,14 @@
                         <a class="nav-link" href="{{ route('home') }}#home">Home</a>
                     </li>
 
-                    <!-- Services Page Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}#services">Services</a>
-                    </li>
-
-                    <!-- Blog Page Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}#blog">Blog</a>
-                    </li>
-
                     <!-- About Us Page Link -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}#about">About</a>
+                    </li>
+
+                    <!-- Services Page Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('home') }}#services">Services</a>
                     </li>
 
                     <!-- Contact Us Page Link -->
@@ -51,10 +46,14 @@
                     <!-- Faq Page Link -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}#faq">FAQ</a>
+                    </li>        
+
+                    <!-- Blog Page Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('home') }}#blog">Blog</a>
                     </li>
 
                     <!-- Login Page Link -->
-
                     @if (Auth::check())
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('logout') }}"
