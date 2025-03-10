@@ -762,42 +762,22 @@
                                     </p>
                                 </div>
 
-                                <div class="sm:inline-flex sm:justify-center sm:items-center text-center sm:hidden">
-                                    <div class="inline-flex justify-center items-center">
-                                        <i data-lucide="map-pin" class="h-8 w-8 text-white"></i>
-                                    </div>
-                                    <p class="text-base text-default-300 text-center font-medium lg:max-w-md mx-auto pl-2">
-                                        test location
-                                    </p>
-                                </div>
-
                                 <div class="sm:inline-flex sm:justify-center sm:items-center text-center sm:hidden mt-8">
                                     <p class="text-sm text-default-300 text-center font-medium lg:max-w-md mx-auto pl-2">
-                                        For technical support, kindly contact  <br/><a href="tel:+6017-3988683"
+                                        For technical support, kindly contact  <br/><a href="tel:+60173988683"
                                             class="underline">+60 17-398 8683</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="flex justify-center mt-4">
-                            <div class="max-w-3xl flex-col justify-center items-center hidden sm:block">
-                                <div class="sm:inline-flex sm:justify-center sm:items-center text-center mr-8">
-                                    <div class="inline-flex justify-center items-center">
-                                        <i data-lucide="map-pin" class="h-8 w-8 text-white"></i>
-                                    </div>
-                                    <p class="text-lg text-default-300 text-center font-medium lg:max-w-md mx-auto pl-2">
-                                        test location
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                     
 
                         <div class="flex justify-center mt-12">
                             <div class="max-w-3xl flex-col justify-center items-center hidden sm:block">
                                 <div class="sm:inline-flex sm:justify-center sm:items-center text-center mr-8">
                                     <p class="text-sm text-default-300 text-center font-medium lg:max-w-md mx-auto pl-2">
-                                        For technical support, kindly contact <br/> <a href="tel:+6017-3988683"
+                                        For technical support, kindly contact <br/> <a href="tel:+60173988683"
                                             class="underline">+60 17-398 8683</a>
                                     </p>
                                 </div>
@@ -1146,7 +1126,7 @@
                                     <li>
                                         <p class="text-default-300 text-sm font-medium">Website: <a
                                                 href="{{ route('home') }}"
-                                                class="underline decoration-solid">www.mrgtech.com</a></p>
+                                                class="underline decoration-solid">www.mrgtech.ma</a></p>
                                     </li>
                             </div>
                         </div>
