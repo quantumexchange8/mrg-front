@@ -14,7 +14,7 @@ class ContactFormController extends Controller
         $email = $request->input('email');
         $message = $request->input('message');
 
-        Mail::to('hewkf-jm21@student.tarc.edu.my')->send(new Contact($name, $email, $message));
+        Mail::to('mehdi@mrgtech.ma')->send(new Contact($name, $email, $message));
 
         return redirect()->route('home')->with('contactSent', 'Message has been sent successfully.');
     }
