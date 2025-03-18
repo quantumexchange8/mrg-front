@@ -16,8 +16,10 @@
                                         class="bg-gradient-to-l from-red-600 to-primary text-transparent bg-clip-text">Redefining
                                     </span> Tech Solutions for Modern
                                     Businesses</h4>
-                                <p class="text-lg max-w-xl text-default-200 mb-6">We drive innovation and deliver tailored
-                                    technology solutions to help modern businesses thrive in the digital era.</p>
+                                <p class="text-lg max-w-xl text-default-200 mb-6">With more than <strong
+                                        class="text-indigo-500">15 years of experience</strong> in working in
+                                    the technology industry, we have built a reputation for delivering innovative solutions
+                                    that empower your business.</p>
 
                                 <div>
                                     <a href="#services"
@@ -197,6 +199,35 @@
         </div><!-- Container End -->
     </section>
     <!-- Hero end  -->
+
+    <section class="sm:py-12" data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="container p-4 sm:p-10 lg:p-12">
+
+            <div class="grid md:grid-cols-2 gap-6 items-center mt-12">
+                <div data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+                    <div class="max-w-md p-3">
+                        <span
+                            class="py-1 px-3 rounded-md text-sm font-extrabold uppercase tracking-wider text-indigo-400 bg-white/5">over
+                            20 skilled professionals</span>
+                        <h2 class="text-3xl font-medium text-justify capitalize text-default-200 mt-4">Meet Our Team
+                        </h2>
+                        <p class="text-lg font-medium text-default-300 mt-5 mb-8 ">
+                            Our team consists of over 20 highly skilled professionals, each bringing years of experience and
+                            specialized knowledge to the table. <br /><br />They are
+                            committed to
+                            propelling your company to the next stage with the latest in
+                            innovation and technology, ranging from automation and ERP systems to cutting-edge 3D website
+                            integrations.</p>
+                    </div>
+                </div><!-- ebd grid-cols -->
+
+                <div class="relative" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">
+                    <img src="assets/images/team/team.jpg" class="rounded-xl" alt="">
+                    <div class="absolute inset-0 bg-default-950/50 rounded-xl"></div>
+                </div><!-- ebd grid-cols -->
+            </div><!-- end grid -->
+        </div><!-- end container -->
+    </section>
 
     <!-- Start Core Value -->
     <section class="sm:py-12" data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
@@ -758,26 +789,27 @@
                                         <i data-lucide="phone" class="h-8 w-8 text-white"></i>
                                     </div>
                                     <p class="text-base text-default-300 font-medium lg:max-w-md mx-auto pl-2">
-                                        <a href="tel:0668105106 ">0668105106 </a>
+                                        <a href="tel:0668105106 " class="hover:underline">0668105106 </a><br />
+                                        <a href="tel:0653632244 " class="hover:underline">0653632244 </a>
                                     </p>
                                 </div>
 
                                 <div class="sm:inline-flex sm:justify-center sm:items-center text-center sm:hidden mt-8">
                                     <p class="text-sm text-default-300 text-center font-medium lg:max-w-md mx-auto pl-2">
-                                        For technical support, kindly contact  <br/><a href="tel:+60173988683"
+                                        For technical support, kindly contact <br /><a href="tel:+60173988683"
                                             class="underline">+60 17-398 8683</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                     
+
 
                         <div class="flex justify-center mt-12">
                             <div class="max-w-3xl flex-col justify-center items-center hidden sm:block">
                                 <div class="sm:inline-flex sm:justify-center sm:items-center text-center mr-8">
                                     <p class="text-sm text-default-300 text-center font-medium lg:max-w-md mx-auto pl-2">
-                                        For technical support, kindly contact <br/> <a href="tel:+60173988683"
+                                        For technical support, kindly contact <br /> <a href="tel:+60173988683"
                                             class="underline">+60 17-398 8683</a>
                                     </p>
                                 </div>
@@ -1121,6 +1153,7 @@
                                     <li>
                                         <p class="text-default-300 text-sm font-medium">Phone Number: <a
                                                 href="tel:0668105106 " class="underline decoration-solid">0668105106 </a>
+                                                or <a href="tel:0653632244 " class="underline decoration-solid">0653632244 </a>
                                         </p>
                                     </li>
                                     <li>
@@ -1198,7 +1231,7 @@
                                             <p>By <strong class="text-blue-500">John Liu, CNN</strong></p>
                                             <a href="https://edition.cnn.com/2025/02/13/tech/china-apple-alibaba-ai-hnk-intl/index.html"
                                                 target=”_blank”
-                                                class="text-white border-b border-dashed border-default-200 pb-1 hidden sm:inline-bloc">Read
+                                                class="text-white border-b border-dashed border-default-200 pb-1 hidden sm:inline-block">Read
                                                 More <i data-lucide="move-right" class="inline h-4 w-4 ms-2"></i>
                                             </a>
                                         </div>
