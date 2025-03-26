@@ -32,6 +32,16 @@
             </style>
         @endif
     </head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16935086972">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16935086972');
+</script>
     <body class="bg-default-900">
         <div>
             <div class="fixed top-0 -z-10">
