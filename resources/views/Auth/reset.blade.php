@@ -50,9 +50,7 @@
                             </div>
                         @endif
                         <div class="my-auto">
-                            <h4 class="text-2xl font-bold text-white mb-3">Reset Password</h4>
-                            <p class="text-default-300 mb-8 max-w-sm">Please enter new password to reset your previous
-                                password</p>
+                            {!!__('auth.resetPasswordText')!!}
 
                             <!-- form -->
                             <form action="{{ route('handleReset', ['token' => $user->remember_token]) }}" method="POST"
@@ -60,26 +58,25 @@
                                 @csrf
                                 <div class="mb-4">
                                     <label for="emailaddress"
-                                        class="block text-base/normal font-semibold text-default-200 mb-2">Password</label>
+                                        class="block text-base/normal font-semibold text-default-200 mb-2">{{__('auth.passwordLabel')}}</label>
                                     <input
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
-                                        type="password" id="newpassword" name="password" placeholder="Enter new password"
+                                        type="password" id="newpassword" name="password" placeholder="{{__('auth.resetPasswordPlaceholder')}}"
                                         required>
                                 </div>
                                 <div class="mb-4">
                                     <label for="emailaddress"
-                                        class="block text-base/normal font-semibold text-default-200 mb-2">Confirm
-                                        Password</label>
+                                        class="block text-base/normal font-semibold text-default-200 mb-2">{{__('auth.confirmPasswordLabel')}}</label>
                                     <input
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
                                         type="password" id="newpassword" name="cfmPassword"
-                                        placeholder="Enter new password again" required>
+                                        placeholder="{{__('auth.confirmPasswordPlaceholder')}}" required>
                                 </div>
                                 <!-- end email input -->
                                 <div class="text-center">
                                     <button
                                         class="w-full inline-flex items-center justify-center px-6 py-2 backdrop-blur-2xl bg-primary-600/90 text-white rounded-lg transition-all duration-500 group hover:bg-primary-600 mt-5"
-                                        type="submit"><span class="fw-bold">Reset</span> </button>
+                                        type="submit"><span class="fw-bold">{{__('auth.resetLabel')}}</span> </button>
                                 </div>
                             </form><!-- end form-->
                         </div>

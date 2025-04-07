@@ -43,29 +43,26 @@
                             </a>
                         </div>
                         <div class="pb6 my-auto">
-                            <h4 class="text-2xl font-bold text-white mb-4">Get Started Now</h4>
-                            <p class="text-default-300 mb-8 max-w-sm ">Join us for innovative IT solutions and success!</p>
-
+                            {!!__('auth.registerText')!!}
                             <!-- form -->
                             <form action="{{ route('storeUser') }}" method="POST" class="text-start">
                                 @csrf
                                 <div class="mb-4">
                                     <label for="input-label"
-                                        class="block text-base/normal font-semibold text-default-200 mb-2">Your Name</label>
+                                        class="block text-base/normal font-semibold text-default-200 mb-2">{{__('auth.nameLabel')}}</label>
                                     <input type="text" id="input-label" name="name"
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
-                                        placeholder="Your Name" required>
+                                        placeholder="{{__('auth.nameLabel')}}" required>
                                     @error('name')
                                         <div class="text-red-500">{{ $message }}</div>
                                     @enderror
                                 </div>
                                 <div class="mb-4">
                                     <label for="emailaddress"
-                                        class="block text-base/normal font-semibold text-default-200 mb-2">Email
-                                        address</label>
+                                        class="block text-base/normal font-semibold text-default-200 mb-2">{{__('auth.emailLabel')}}</label>
                                     <input
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
-                                        type="email" name="email" id="emailaddress" placeholder="Enter your email"
+                                        type="email" name="email" id="emailaddress" placeholder="{{__('auth.emailPlaceholder')}}"
                                         required>
                                     @error('email')
                                         <div class="text-red-500">{{ $message }}</div>
@@ -74,10 +71,10 @@
                                 <!-- end email input -->
                                 <div class="mb-4">
                                     <label for="password"
-                                        class="block text-base/normal font-semibold text-default-200 mb-2">Password</label>
+                                        class="block text-base/normal font-semibold text-default-200 mb-2">{{__('auth.passwordLabel')}}</label>
                                     <input
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
-                                        type="password" name="password" id="password" placeholder="Enter your password"
+                                        type="password" name="password" id="password" placeholder="{{__('auth.passwordPlaceholder')}}"
                                         required>
                                     @error('password')
                                         <div class="text-red-500">{{ $message }}</div>
@@ -87,7 +84,7 @@
                                 <div class="mb-6 text-center">
                                     <button
                                         class="w-full inline-flex items-center justify-center px-6 py-2 backdrop-blur-2xl bg-primary-600/90 text-white rounded-lg transition-all duration-500 group hover:bg-primary-600 mt-5"
-                                        type="submit"><span class="fw-bold">Sign Up</span> </button>
+                                        type="submit"><span class="fw-bold">{{__('auth.signup')}}</span> </button>
                                 </div>
                             </form><!-- end form-->
                         </div>
@@ -95,8 +92,8 @@
                 </div> <!-- end grid -->
             </div> <!-- end bg -->
             <div class="w-full text-center mt-5">
-                <p class="text-default-300 leading-6 text-base font-medium">Already have an account? <a
-                        href="{{ route('login') }}" class="text-primary font-semibold ms-1">Sign In</a></p>
+                <p class="text-default-300 leading-6 text-base font-medium">{{__('auth.signuinText')}}<a
+                        href="{{ route('login') }}" class="text-primary font-semibold ms-1">{{__('auth.signin')}}</a></p>
             </div>
         </div><!-- end container -->
     </section><!-- end section -->

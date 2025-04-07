@@ -77,26 +77,23 @@
                             }, 3000);
                         </script>
                         <div class="my-auto">
-                            <h4 class="text-2xl font-bold text-white mb-3">Forgot Password?</h4>
-                            <p class="text-default-300 mb-8 max-w-sm">Enter your email address to receive the reset link.</p>
-
+                            {!!__('auth.forgotPasswordText')!!}
                             <!-- form -->
                             <form action="{{ route('handleForgotPW') }}" method="POST" class="text-start">
                                 @csrf
                                 <div class="mb-4">
                                     <label for="emailaddress"
-                                        class="block text-base/normal font-semibold text-default-200 mb-2">Email
-                                        address</label>
+                                        class="block text-base/normal font-semibold text-default-200 mb-2">{{__('auth.emailLabel')}}</label>
                                     <input
                                         class="block w-full rounded py-1.5 px-3 bg-transparent border-white/10 border-default-200 text-white/80 focus:border-white/25 focus:ring-transparent"
-                                        type="email" id="emailaddress" name="email" placeholder="Enter your email"
+                                        type="email" id="emailaddress" name="email" placeholder="{{__('auth.emailPlaceholder')}}"
                                         required>
                                 </div>
                                 <!-- end email input -->
                                 <div class="text-center">
                                     <button
                                         class="w-full inline-flex items-center justify-center px-6 py-2 backdrop-blur-2xl bg-primary-600/90 text-white rounded-lg transition-all duration-500 group hover:bg-primary-600 mt-5"
-                                        type="submit"><span class="fw-bold">Send</span> </button>
+                                        type="submit"><span class="fw-bold">{{__('public.submitLabel')}}</span> </button>
                                 </div>
                             </form><!-- end form-->
                         </div>
@@ -104,8 +101,8 @@
                 </div> <!-- end grid -->
             </div> <!-- end bg -->
             <div class="w-full text-center mt-5">
-                <p class="text-default-300 leading-6 text-base font-medium">Back To <a href="{{ route('login') }}"
-                        class="text-primary font-semibold ms-1">Log In</a></p>
+                <p class="text-default-300 leading-6 text-base font-medium">{{__('auth.signuinText-2')}}<a href="{{ route('login') }}"
+                        class="text-primary font-semibold ms-1">{{__('auth.signin')}}</a></p>
             </div>
         </div><!-- end container -->
     </section><!-- end section -->

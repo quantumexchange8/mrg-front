@@ -9,25 +9,23 @@
                         <i data-lucide="badge"
                             class="animate-[spin_10s_linear_infinite] h-12 w-12 fill-primary/20 text-transparent"></i>
                     </div>
+
                     <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                         <div class="md:col-span-7" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
                             <div class="md:me-6">
                                 <h4 class="font-semibold text-4xl/tight lg:text-6xl/tight capitalize text-white mb-4"><span
-                                        class="bg-gradient-to-l from-red-600 to-primary text-transparent bg-clip-text">Redefining
-                                    </span> Tech Solutions for Modern
-                                    Businesses</h4>
-                                <p class="text-lg max-w-xl text-default-200 mb-6">With more than <strong
-                                        class="text-indigo-500">15 years of experience</strong> in working in
-                                    the technology industry, we have built a reputation for delivering innovative solutions
-                                    that empower your business.</p>
+                                        class="bg-gradient-to-l from-red-600 to-primary text-transparent bg-clip-text">{!! __('public.heroText-1') !!}
+                                </h4>
+                                <p class="text-lg max-w-xl text-default-200 mb-6">{!! __('public.heroText-2') !!}</p>
 
                                 <div>
                                     <a href="#services"
-                                        class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-lg hover:bg-primary-hover transition-all duration-300 me-2 mt-2">Explore
-                                        Solutions</a>
+                                        class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-lg hover:bg-primary-hover transition-all duration-300 me-2 mt-2">
+                                        {{ __('public.heroBtn-1') }}</a>
                                     <a href="#contact"
-                                        class="inline-flex items-center justify-center gap-2 py-2 px-6 transition-all duration-300 border bg-transparent border-white/20 text-white rounded-lg mt-2 hover:bg-primary hover:border-primary">Contact
-                                        Us <i class="mdi mdi-arrow-top-right-thin text-xl leading-[0]"></i></a>
+                                        class="inline-flex items-center justify-center gap-2 py-2 px-6 transition-all duration-300 border bg-transparent border-white/20 text-white rounded-lg mt-2 hover:bg-primary hover:border-primary">
+                                        <i class="mdi mdi-arrow-top-right-thin text-xl leading-[0]"></i>
+                                        {{ __('public.heroBtn-2') }}</a>
                                 </div>
                             </div>
                         </div><!--end col-->
@@ -86,7 +84,8 @@
         <div class="container mx-auto px-30">
             <div class="flex items-end justify-between mb-10">
                 <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-2xl md:text-3xl font-medium capitalize text-white mb-4">Key Features</h2>
+                    <h2 class="text-2xl md:text-3xl font-medium capitalize text-white mb-4">{{ __('public.featureTitle') }}
+                    </h2>
                 </div>
             </div><!-- end flex -->
 
@@ -99,9 +98,10 @@
                         <div
                             class="inset-0 bg-black bg-opacity-50 rounded-xl h-full flex items-center justify-center backdrop-blur-sm">
                             <div class="p-6 sm:p-10 grid grid-cols-1 gap-3">
-                                <h3 class="text-xl md:text-2xl font-medium text-white">Automation Solutions</h3>
-                                <p class="text-sm md:text-md text-default-200 font-medium">Streamline operations with our
-                                    ERP, optimizing resources, enhancing decisions, and providing real-time insights.</p>
+                                <h3 class="text-xl md:text-2xl font-medium text-white">{{ __('public.featureSubtitle-1') }}
+                                </h3>
+                                <p class="text-sm md:text-md text-default-200 font-medium">
+                                    {{ __('public.featureSubtext-1') }}</p>
                             </div>
                         </div>
                     </div>
@@ -114,11 +114,10 @@
                         <div
                             class="bg-black bg-opacity-50 rounded-xl h-full flex items-center justify-center backdrop-blur-sm">
                             <div class="p-6 sm:p-10 grid grid-cols-1 gap-3">
-                                <h3 class="text-xl md:text-2xl font-medium text-white">Enterprise Resource Planning (ERP)
+                                <h3 class="text-xl md:text-2xl font-medium text-white">{{ __('public.featureSubtitle-2') }}
                                 </h3>
-                                <p class="text-sm md:text-md text-default-200 font-medium">Unify your business processes
-                                    with MRG's tailored ERP solutions. Our ERP services consolidate resource management,
-                                    enhance decision-making, and deliver real-time information.</p>
+                                <p class="text-sm md:text-md text-default-200 font-medium">
+                                    {{ __('public.featureSubtext-2') }}</p>
                             </div>
                         </div>
                     </div>
@@ -132,11 +131,10 @@
                         <div
                             class="inset-0 bg-black bg-opacity-50 rounded-xl h-full flex items-center justify-center backdrop-blur-sm">
                             <div class="p-6 sm:p-10 grid grid-cols-1 gap-3">
-                                <h3 class="text-xl md:text-2xl font-medium text-white">3D Online Integration</h3>
-                                <p class="text-sm md:text-md text-default-200 font-medium">Streamline
-                                    business processes and improve efficiency with MRG's advanced automation solutions. We
-                                    help businesses reduce manual effort and focus on what truly matters—growth and
-                                    innovation.</p>
+                                <h3 class="text-xl md:text-2xl font-medium text-white">{{ __('public.featureSubtitle-3') }}
+                                </h3>
+                                <p class="text-sm md:text-md text-default-200 font-medium">
+                                    {{ __('public.featureSubtext-3') }}</p>
                             </div>
                         </div>
                     </div>
@@ -172,19 +170,12 @@
                                             class=" mx-8">
                                             <h2
                                                 class=" text-4xl sm:text-5xl font-medium capitalize text-white mt-4 text-center">
-                                                Company Overview
+                                                {{ __('public.aboutTitle') }}
                                             </h2>
                                             <div class="text-center lg:mx-32 xl:mx-60 pt-6">
                                                 <p
                                                     class="text-base sm:text-lg font-medium text-default-200 mt-2 text-center">
-                                                    "To revolutionize the
-                                                    way
-                                                    businesses
-                                                    operate by
-                                                    providing innovative,
-                                                    automated, and immersive technology solutions that simplify processes,
-                                                    enhance user experiences, and set the standard for the future of digital
-                                                    interactions."
+                                                    {{ __('public.aboutText') }}
                                                 </p>
                                             </div>
                                         </div><!-- end grid-col -->
@@ -207,17 +198,11 @@
                 <div data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
                     <div class="max-w-md p-3">
                         <span
-                            class="py-1 px-3 rounded-md text-sm font-extrabold uppercase tracking-wider text-indigo-400 bg-white/5">over
-                            20 skilled professionals</span>
-                        <h2 class="text-3xl font-medium text-justify capitalize text-default-200 mt-4">Meet Our Team
+                            class="py-1 px-3 rounded-md text-sm font-extrabold uppercase tracking-wider text-indigo-400 bg-white/5">{{ __('public.ourTeamTag') }}</span>
+                        <h2 class="text-3xl font-medium text-justify capitalize text-default-200 mt-4">
+                            {{ __('public.ourTeamTitle') }}
                         </h2>
-                        <p class="text-lg font-medium text-default-300 mt-5 mb-8 ">
-                            Our team consists of over 20 highly skilled professionals, each bringing years of experience and
-                            specialized knowledge to the table. <br /><br />They are
-                            committed to
-                            propelling your company to the next stage with the latest in
-                            innovation and technology, ranging from automation and ERP systems to cutting-edge 3D website
-                            integrations.</p>
+                        <p class="text-lg font-medium text-default-300 mt-5 mb-8 ">{!! __('public.ourTeamText') !!}</p>
                     </div>
                 </div><!-- ebd grid-cols -->
 
@@ -234,7 +219,7 @@
         <div class="container p-0 sm:p-10 lg:p-20">
             <div class="flex hidden items-end justify-between mb-10 md:block">
                 <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-4xl font-medium capitalize text-white mb-2">Our Core Values</h2>
+                    <h2 class="text-4xl font-medium capitalize text-white mb-2">{{ __('public.coreValueTitle') }}</h2>
                 </div>
             </div><!-- end flex -->
 
@@ -242,7 +227,7 @@
                 data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000">
 
                 <div class="max-w-2xl mx-auto text-center pt-10 md:hidden">
-                    <h2 class="text-4xl font-medium capitalize text-white mb-2">Our Core Values</h2>
+                    <h2 class="text-4xl font-medium capitalize text-white mb-2">{{ __('public.coreValueTitle') }}</h2>
                 </div>
 
                 <div class="md:w-1/2 w-auto grow p-4 text-center md:h-80 md:border-e border-b border-white/10">
@@ -252,10 +237,9 @@
                             <i data-lucide="framer" class="h-10 w-10"></i>
                         </div>
                     </div>
-                    <h2 class="text-2xl text-white font-medium">Innovation at the Core</h2>
-                    <p class="text-base text-default-200 mb-6 pt-6">Constantly pushing technological boundaries to deliver
-                        creative and futuristic
-                        solutions.
+                    <h2 class="text-2xl text-white font-medium">{{ __('public.coreValueSubTitle-1') }}</h2>
+                    <p class="text-base text-default-200 mb-6 pt-6">
+                        {{ __('public.coreValueSubText-1') }}
                     </p>
                 </div><!-- end card -->
 
@@ -266,10 +250,9 @@
                         </div>
 
                     </div>
-                    <h2 class="text-2xl text-white font-medium">Client-Centric Approach</h2>
-                    <p class="text-base text-default-200 mb-6 pt-6">Prioritizing the needs and goals of clients by offering
-                        tailored and scalable
-                        technology solutions.
+                    <h2 class="text-2xl text-white font-medium">{{ __('public.coreValueSubTitle-2') }}</h2>
+                    <p class="text-base text-default-200 mb-6 pt-6">
+                        {{ __('public.coreValueSubText-2') }}
                     </p>
                 </div><!-- end card -->
 
@@ -280,11 +263,9 @@
                         </div>
 
                     </div>
-                    <h2 class="text-2xl text-white font-medium">Automation & Efficiency</h2>
-                    <p class="text-base text-default-200 mb-6 pt-6">Streamlining business processes by automating
-                        operations
-                        to enhance
-                        productivity and reduce manual workloads.
+                    <h2 class="text-2xl text-white font-medium">{{ __('public.coreValueSubTitle-3') }}</h2>
+                    <p class="text-base text-default-200 mb-6 pt-6">
+                        {{ __('public.coreValueSubText-3') }}
                     </p>
                 </div><!-- end card -->
 
@@ -295,12 +276,10 @@
                         </div>
 
                     </div>
-                    <h2 class="text-2xl text-white font-medium">Empowerment Through Technology</h2>
+                    <h2 class="text-2xl text-white font-medium">{{ __('public.coreValueSubTitle-4') }}</h2>
                     <div class="h-24">
                         <p class="text-base text-default-200 mb-6 pt-6">
-                            Enabling businesses to achieve growth and success
-                            through smart,
-                            integrated digital solutions.
+                            {{ __('public.coreValueSubText-4') }}
                         </p>
                     </div>
 
@@ -315,10 +294,9 @@
                         </div>
 
                     </div>
-                    <h2 class="text-2xl text-white font-medium">Integrity & Transparency</h2>
-                    <p class="text-base text-default-200 mb-6 pt-6">Building trust with partners and clients through honest
-                        communication and
-                        ethical business practices.
+                    <h2 class="text-2xl text-white font-medium">{{ __('public.coreValueSubTitle-5') }}</h2>
+                    <p class="text-base text-default-200 mb-6 pt-6">
+                        {{ __('public.coreValueSubText-5') }}
                     </p>
                 </div><!-- end card -->
 
@@ -330,11 +308,9 @@
                         </div>
 
                     </div>
-                    <h2 class="text-2xl text-white font-medium">Sustainability & Impact</h2>
-                    <p class="text-base text-default-200 mb-6 pt-6">Designing technology that supports long-term growth
-                        while being mindful of
-                        environmental and economic sustainability.
-
+                    <h2 class="text-2xl text-white font-medium">{{ __('public.coreValueSubTitle-6') }}</h2>
+                    <p class="text-base text-default-200 mb-6 pt-6">
+                        {{ __('public.coreValueSubText-6') }}
                     </p>
                 </div><!-- end card -->
 
@@ -344,11 +320,9 @@
                             <i data-lucide="chart-no-axes-gantt" class="h-10 w-10 text-rose-500"></i>
                         </div>
                     </div>
-                    <h2 class="text-2xl text-white font-medium">Adaptability & Agility</h2>
-                    <p class="text-base text-default-200 mb-6 pt-6">Staying flexible and responsive to the evolving needs
-                        of
-                        the market and
-                        technological advancements.
+                    <h2 class="text-2xl text-white font-medium">{{ __('public.coreValueSubTitle-7') }}</h2>
+                    <p class="text-base text-default-200 mb-6 pt-6">
+                        {{ __('public.coreValueSubText-7') }}
                     </p>
                 </div><!-- end card -->
             </div><!-- end Core Value -->
@@ -360,10 +334,8 @@
         <div class="container mx-auto px-2">
             <div class="flex items-end justify-between mb-10">
                 <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-3xl font-medium capitalize text-white mb-4">Solutions & Services</h2>
-                    <p class="text-base text-default-200 font-medium">We provide innovative solutions like business
-                        automation, custom software, and 3D digital experiences to help businesses streamline operations and
-                        stay competitive in the digital age.</p>
+                    <h2 class="text-3xl font-medium capitalize text-white mb-4">{{ __('public.snsTitle') }}</h2>
+                    <p class="text-base text-default-200 font-medium">{{ __('public.snsText') }}</p>
                 </div>
             </div><!-- end flex -->
 
@@ -383,7 +355,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-3xl font-medium text-white">Business Automation</h4>
+                                    <h4 class="text-3xl font-medium text-white">{{ __('public.sns-1-title') }}</h4>
                                     <div class="mt-6">
                                         <div class="grid sm:grid-cols-1 gap-3">
 
@@ -395,19 +367,16 @@
                                                                 class="inline-flex items-center justify-center h-10 w-10 bg-teal-500/20 text-teal-500 rounded-lg">
                                                                 <i data-lucide="monitor-cog" class="h-6 w-6"></i>
                                                             </div>
-                                                            <h3 class="text-lg sm:text-xl font-medium text-default-200">ERP
-                                                                Integration</h3>
+                                                            <h3 class="text-lg sm:text-xl font-medium text-default-200">
+                                                                {{ __('public.sns-1-subTitle-1') }}</h3>
                                                             <i data-lucide="chevron-down" class="h-6 w-6"></i>
                                                         </div>
 
                                                         <div
                                                             class="collapsible-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
-                                                            <p class="text-default-100 text-justify	mt-3">Simplify
-                                                                workflow,
-                                                                resource
-                                                                allocation, and data analysis for better decision-making and
-                                                                efficiency by integrating Enterprise Resource Planning (ERP)
-                                                                systems into your company's operations.</p>
+                                                            <p class="text-default-100 text-justify	mt-3">
+                                                                {{ __('public.sns-1-subText-1') }}
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </button>
@@ -422,22 +391,15 @@
                                                                 <i data-lucide="component" class="h-6 w-6"></i>
                                                             </div>
                                                             <h3 class="text-lg sm:text-xl font-medium text-default-200">
-                                                                Workflow
-                                                                Automation</h3>
+                                                                {{ __('public.sns-1-subTitle-2') }}</h3>
                                                             <i data-lucide="chevron-down" class="h-6 w-6"></i>
                                                         </div>
 
                                                         <div
                                                             class="collapsible-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                                                             <p class="text-default-100 text-justify mt-3">
-                                                                Automate repetitive
-                                                                processes and
-                                                                tasks
-                                                                in your organization to enhance productivity, eliminate
-                                                                human
-                                                                error, and release valuable time for more strategic
-                                                                higher-level
-                                                                work</p>
+                                                                {{ __('public.sns-1-subText-2') }}
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </button>
@@ -467,7 +429,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-3xl font-medium text-white">3D Digital Store Solutions</h4>
+                                    <h4 class="text-3xl font-medium text-white">{{ __('public.sns-2-title') }}</h4>
                                     <div class="mt-6">
                                         <div class="grid sm:grid-cols-1 gap-3">
 
@@ -479,21 +441,15 @@
                                                                 class="inline-flex items-center justify-center h-10 w-10 bg-violet-300/20 text-violet-300 rounded-lg">
                                                                 <i data-lucide="scale-3d" class="h-6 w-6"></i>
                                                             </div>
-                                                            <h3 class="text-lg sm:text-xl font-medium text-default-200">3D
-                                                                Modeling
-                                                                for
-                                                                Retail</h3>
+                                                            <h3 class="text-lg sm:text-xl font-medium text-default-200">
+                                                                {{ __('public.sns-2-subTitle-1') }}</h3>
                                                             <i data-lucide="chevron-down" class="h-6 w-6"></i>
                                                         </div>
 
                                                         <div
                                                             class="collapsible-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                                                             <p class="text-default-100 text-justify mt-3">
-                                                                Make your products come alive through
-                                                                outstanding 3D models that enhance the online shopping
-                                                                experience, allowing customers to visualize and interact
-                                                                with
-                                                                products from all angles</p>
+                                                                {{ __('public.sns-2-subText-1') }}</p>
                                                         </div>
                                                     </div>
                                                 </button>
@@ -507,19 +463,15 @@
                                                                 class="inline-flex items-center justify-center h-10 w-10 bg-green-500/20 text-green-500 rounded-lg">
                                                                 <i data-lucide="shopping-bag" class="h-6 w-6"></i>
                                                             </div>
-                                                            <h3 class="text-lg sm:text-xl text-default-200">Immersive
-                                                                Shopping
-                                                                Experience</h3>
+                                                            <h3 class="text-lg sm:text-xl text-default-200">
+                                                                {{ __('public.sns-2-subTitle-2') }}</h3>
                                                             <i data-lucide="chevron-down" class="h-6 w-6"></i>
                                                         </div>
 
                                                         <div
                                                             class="collapsible-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                                                             <p class="text-default-100 text-justify mt-3">
-                                                                Transform your online store into an interactive, immersive
-                                                                space where customers can explore products in 3D
-                                                                environments, providing a more realistic and captivating
-                                                                purchasing experience</p>
+                                                                {{ __('public.sns-2-subText-2') }}</p>
                                                         </div>
                                                     </div>
                                                 </button>
@@ -547,7 +499,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-3xl font-medium text-white">Custom Software Development</h4>
+                                    <h4 class="text-3xl font-medium text-white">{{ __('public.sns-3-title') }}</h4>
                                     <div class="mt-6">
                                         <div class="grid sm:grid-cols-1 gap-3">
 
@@ -560,19 +512,14 @@
                                                                 <i data-lucide="layout-panel-top" class="h-6 w-6"></i>
                                                             </div>
                                                             <h3 class="text-lg sm:text-xl font-medium text-default-200">
-                                                                Tailored Tech
-                                                                Solutions for Businesses</h3>
+                                                                {{ __('public.sns-3-subTitle-1') }}</h3>
                                                             <i data-lucide="chevron-down" class="h-6 w-6"></i>
                                                         </div>
 
                                                         <div
                                                             class="collapsible-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                                                             <p class="text-default-100 text-justify mt-3">
-                                                                Build custom software applications to
-                                                                address the specific requirements of the business, from web
-                                                                applications to mobile platforms, ensuring seamless
-                                                                integration
-                                                                with your current processes and tools</p>
+                                                                {{ __('public.sns-3-subText-1') }}</p>
                                                         </div>
                                                     </div>
                                                 </button>
@@ -603,7 +550,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-2xl font-medium text-white">Data & Analytics
+                                    <h4 class="text-2xl font-medium text-white">{{ __('public.sns-4-title') }}
                                     </h4>
                                     <div class="mt-6">
                                         <div class="grid sm:grid-cols-1 gap-3">
@@ -617,18 +564,14 @@
                                                                 <i data-lucide="briefcase-business" class="h-6 w-6"></i>
                                                             </div>
                                                             <h3 class="text-lg sm:text-xl font-medium text-default-200">
-                                                                Business
-                                                                Intelligence Solutions</h3>
+                                                                {{ __('public.sns-4-subTitle-1') }}</h3>
                                                             <i data-lucide="chevron-down" class="h-6 w-6"></i>
                                                         </div>
 
                                                         <div
                                                             class="collapsible-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                                                             <p class="text-default-100 text-justify mt-3">
-                                                                Gain competitive advantage, maximize performance, and make
-                                                                better decisions with data-driven insights. With our
-                                                                business intelligence solutions, you can gather, analyze,
-                                                                and act upon data in real time.</p>
+                                                                {{ __('public.sns-4-subText-1') }}</p>
                                                         </div>
                                                     </div>
                                                 </button>
@@ -656,7 +599,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 class="text-3xl font-medium text-white">Technical Consulting
+                                    <h4 class="text-3xl font-medium text-white">{{ __('public.sns-5-title') }}
                                     </h4>
                                     <div class="mt-6">
                                         <div class="grid sm:grid-cols-1 gap-3">
@@ -669,18 +612,14 @@
                                                                 class="inline-flex items-center justify-center h-10 w-10 bg-amber-400/20 text-amber-300 rounded-lg">
                                                                 <i data-lucide="grid-2x2-check" class="h-6 w-6"></i>
                                                             </div>
-                                                            <h3 class="text-lg sm:text-xl font-medium text-default-200">IT
-                                                                Strategy &
-                                                                Implementation</h3>
+                                                            <h3 class="text-lg sm:text-xl font-medium text-default-200">
+                                                                {{ __('public.sns-5-subTitle-1') }}</h3>
                                                             <i data-lucide="chevron-down" class="h-6 w-6"></i>
                                                         </div>
                                                         <div
                                                             class="collapsible-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                                                             <p class="text-default-100 text-justify mt-3">
-                                                                Receive professional advice on mapping technology to
-                                                                business objectives. We provide consulting services to
-                                                                define IT strategies, onboard new technologies, and ensure
-                                                                the systems are optimized for performance and scalability.
+                                                                {{ __('public.sns-5-subText-1') }}
                                                             </p>
                                                         </div>
                                                     </div>
@@ -703,7 +642,7 @@
         <div class="container px-8">
             <div class="flex items-end justify-between mb-10">
                 <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-3xl font-medium capitalize text-white mb-4">Industry We Served</h2>
+                    <h2 class="text-3xl font-medium capitalize text-white mb-4">{{ __('public.industryTitle') }}</h2>
                 </div>
             </div><!-- end flex -->
 
@@ -713,7 +652,7 @@
                     data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
 
                     <div class="absolute inset-0 flex items-center text-center justify-center bg-black/40 rounded-lg">
-                        <h2 class="text-xl font-medium text-default-200 p-4">Retail & E-commerce</h2>
+                        <h2 class="text-xl font-medium text-default-200 p-4">{{ __('public.industrySubTitle-1') }}</h2>
                     </div>
                 </div><!-- end grid-col -->
 
@@ -722,7 +661,7 @@
                     data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
 
                     <div class="absolute inset-0 flex items-center text-center justify-center bg-black/40 rounded-lg">
-                        <h2 class="text-xl font-medium text-default-200 p-8">Logistics & Supply Chain </h2>
+                        <h2 class="text-xl font-medium text-default-200 p-8">{{ __('public.industrySubTitle-2') }}</h2>
                     </div>
                 </div><!-- end grid-col -->
 
@@ -731,7 +670,7 @@
                     data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
 
                     <div class="absolute inset-0 flex items-center text-center justify-center bg-black/40 rounded-lg">
-                        <h2 class="text-xl font-medium text-default-200 p-8">Manufacturing</h2>
+                        <h2 class="text-xl font-medium text-default-200 p-8">{{ __('public.industrySubTitle-3') }}</h2>
                     </div>
                 </div><!-- end grid-col -->
 
@@ -740,7 +679,7 @@
                     data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
 
                     <div class="absolute inset-0 flex items-center text-center justify-center bg-black/40 rounded-lg">
-                        <h2 class="text-xl font-medium text-default-200 p-8">Finance</h2>
+                        <h2 class="text-xl font-medium text-default-200 p-8">{{ __('public.industrySubTitle-4') }}</h2>
                     </div>
                 </div><!-- end grid-col -->
 
@@ -749,7 +688,7 @@
                     data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
 
                     <div class="absolute inset-0 flex items-center text-center justify-center bg-black/35 rounded-lg">
-                        <h2 class="text-xl font-medium text-default-200 p-8">Healthcare</h2>
+                        <h2 class="text-xl font-medium text-default-200 p-8">{{ __('public.industrySubTitle-5') }}</h2>
                     </div>
                 </div><!-- end grid-col -->
             </div><!-- end grid -->
@@ -757,7 +696,7 @@
     </section>
     <!-- End Industry Served -->
 
-    <!-- Start -->
+    <!-- Start Contact -->
     <section class="" id="contact" data-aos="zoom-in" data-aos-easing="ease" data-aos-duration="1000">
         <div class="container px-0 sm:px-16 md:px-20">
             <div class="sm:rounded-2xl bg-slate-950/40 bg-cover bg-center"
@@ -766,10 +705,11 @@
                     <div>
                         <div class="flex justify-center mt-6">
                             <div class="max-w-3xl text-center">
-                                <h1 class="text-4xl md:text-4xl text-default-100 font-medium mb-2">Keep In Touch With Us
+                                <h1 class="text-4xl md:text-4xl text-default-100 font-medium mb-2">
+                                    {{ __('public.contactTitle') }}
                                 </h1>
                                 <p class="text-sm md:text-base text-default-300 font-medium lg:max-w-md mx-auto">
-                                    Please drop your message in the contact form to approach us. </p>
+                                    {{ __('public.contactText') }} </p>
                             </div>
                         </div>
 
@@ -780,7 +720,7 @@
                                         <i data-lucide="mail" class="h-8 w-8 text-white"></i>
                                     </div>
                                     <p class="text-base text-default-300 font-medium lg:max-w-md mx-auto pl-2">
-                                        <a href="mailto:mehdi@mrgtech.ma">mehdi@mrgtech.ma</a>
+                                        <a href="mailto:mehdi@mrgtech.ma">{{ __('public.email') }}</a>
                                     </p>
                                 </div>
 
@@ -789,15 +729,15 @@
                                         <i data-lucide="phone" class="h-8 w-8 text-white"></i>
                                     </div>
                                     <p class="text-base text-default-300 font-medium lg:max-w-md mx-auto pl-2">
-                                        <a href="tel:0668105106 " class="hover:underline">0668105106 </a><br />
-                                        <a href="tel:0653632244 " class="hover:underline">0653632244 </a>
+                                        <a href="tel:0668105106 " class="hover:underline">{{ __('public.phone-1') }}
+                                        </a><br />
+                                        <a href="tel:0653632244 " class="hover:underline">{{ __('public.phone-2') }} </a>
                                     </p>
                                 </div>
 
                                 <div class="sm:inline-flex sm:justify-center sm:items-center text-center sm:hidden mt-8">
                                     <p class="text-sm text-default-300 text-center font-medium lg:max-w-md mx-auto pl-2">
-                                        For technical support, kindly contact <br /><a href="tel:+60173988683"
-                                            class="underline">+60 17-398 8683</a>
+                                        {!! __('public.techphone') !!}
                                     </p>
                                 </div>
                             </div>
@@ -809,8 +749,7 @@
                             <div class="max-w-3xl flex-col justify-center items-center hidden sm:block">
                                 <div class="sm:inline-flex sm:justify-center sm:items-center text-center mr-8">
                                     <p class="text-sm text-default-300 text-center font-medium lg:max-w-md mx-auto pl-2">
-                                        For technical support, kindly contact <br /> <a href="tel:+60173988683"
-                                            class="underline">+60 17-398 8683</a>
+                                        {!! __('public.techphone') !!}
                                     </p>
                                 </div>
                             </div>
@@ -821,29 +760,34 @@
                                 <div class="p-10">
                                     <form class="space-y-2 mb-6" action="{{ route('sendContact') }}" method="POST">
                                         @csrf
-                                        <label for="name" class="text-base text-white">Name: </label>
+                                        <label for="name"
+                                            class="text-base text-white">{{ __('public.nameLabel') }}</label>
                                         <div class="relative pb-4">
                                             <input type="text" id="name"
                                                 class="w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                                placeholder="Your name" name="name" required>
+                                                placeholder="{{ __('public.namePlaceholder') }}" name="name" required>
                                         </div>
 
-                                        <label for="email" class="text-base text-white">Email: </label>
+                                        <label for="email"
+                                            class="text-base text-white">{{ __('public.emailLabel') }}</label>
                                         <div class="relative pb-4">
                                             <input type="email" id="email"
                                                 class="w-full h-12 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10"
-                                                placeholder="Your email" name="email" required>
+                                                placeholder="{{ __('public.emailPlaceholder') }}" name="email"
+                                                required>
                                         </div>
 
-                                        <label for="message" class="text-base text-white">Message: </label>
+                                        <label for="message"
+                                            class="text-base text-white">{{ __('public.messageLabel') }}</label>
                                         <div class="relative pb-4">
                                             <textarea
                                                 class="w-full min-h-36 text-white rounded-lg bg-default-950/60 backdrop-blur-3xl border-white/10 focus:ring-0 focus:border-white/10 overflow-hidden"
-                                                placeholder="Message" name="message" required></textarea>
+                                                placeholder="{{ __('public.messagePlaceholder') }}" name="message" required></textarea>
                                         </div>
                                         <button type="submit"
                                             class="inline-flex items-center justify-center gap-2 px-6 top-[6px] end-[6px] h-9 transition-all bg-primary hover:bg-primary-hover border-primary hover:border-primary-hover text-white rounded-md">
-                                            Send<i data-lucide="move-right" class="h-6 w-6"></i>
+                                            {{ __('public.submitLabel') }}<i data-lucide="move-right"
+                                                class="h-6 w-6"></i>
                                         </button>
                                     </form>
                                 </div>
@@ -861,8 +805,8 @@
         <div class="container">
             <div class="flex flex-wrap items-center justify-between mb-10">
                 <div>
-                    <h2 class="text-4xl font-medium capitalize text-white mb-2">FAQs</h2>
-                    <p class="text-sm text-default-200 font-medium">The followings are the Frquently Ask Questions (FAQs):
+                    <h2 class="text-4xl font-medium capitalize text-white mb-2">{{__('public.faqTitle')}}</h2>
+                    <p class="text-sm text-default-200 font-medium">{{__('public.faqText')}}
                     </p>
                 </div>
             </div><!-- end flex -->
@@ -876,7 +820,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-1">
                             <h5 class="text-base font-semibold flex">
-                                1. What is MRG Tech?
+                                {{ __('public.faq-1-question') }}</p>
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -886,10 +830,7 @@
                             aria-labelledby="faq-1">
                             <div class="px-6 pb-4 pt-0">
                                 <p class="text-default-300 text-sm font-medium">
-                                    MRG Tech is a forward-thinking technology company dedicated to creating innovative
-                                    software solutions. We specialize in business automation, ERP systems, 3D digital
-                                    experiences, and tailored tech solutions designed to help companies optimize their
-                                    operations and enhance user experiences. </p>
+                                    {{ __('public.faq-1-answer') }}</p>
                             </div>
                         </div>
                     </div>
@@ -900,7 +841,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-2">
                             <h5 class="text-base font-semibold flex">
-                                2. What services does MRG Tech offer?
+                                {{ __('public.faq-2-question') }}</p>
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -910,25 +851,7 @@
                             aria-labelledby="faq-2">
                             <div class="px-6 pb-4 pt-0">
                                 <ul class="list-[upper-roman] pl-4">
-                                    <strong class="text-default-200 text-base font-medium">Our services include:</strong>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Business Automation</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">ERP Integration</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">3D Digital Store Solutions</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Custom Software Development</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Data & Analytics</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Technical Consulting</p>
-                                    </li>
+                                    {!! __('public.faq-2-answer') !!}
                                 </ul>
 
 
@@ -942,7 +865,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-3">
                             <h5 class="text-base font-semibold flex">
-                                3. Which industries does MRG Tech serve?
+                                {{ __('public.faq-3-question') }}</p>
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -952,23 +875,7 @@
                             aria-labelledby="faq-3">
                             <div class="px-6 pb-4 pt-0">
                                 <ul class="list-[upper-roman] pl-4">
-                                    <strong class="text-default-200 text-base font-medium">Our core values are centered
-                                        around:</strong>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Retail & E-commerce</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Logistics & Supply Chain</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Manufacturing</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Finance</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Healthcare</p>
-                                    </li>
+                                    {!! __('public.faq-3-answer') !!}
                                 </ul>
                             </div>
                         </div>
@@ -984,7 +891,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-4">
                             <h5 class="text-base font-semibold flex">
-                                4. What are MRG Tech's core values?
+                                {{ __('public.faq-4-question') }}</p>
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -994,32 +901,7 @@
                             aria-labelledby="faq-4">
                             <div class="px-6 pb-4 pt-0">
                                 <ul class="list-[upper-roman] pl-4">
-                                    <strong class="text-default-200 text-base font-medium">Our core values are centered
-                                        around:</strong>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Innovation: Constantly pushing
-                                            technological boundaries.</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Client-Centric Approach:
-                                            Prioritizing the needs of our clients.</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Automation & Efficiency:
-                                            Streamlining business processes.</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Integrity & Transparency: Building
-                                            trust through honest communication.</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Empowerment Through Technology:
-                                            Helping businesses achieve growth.</p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Adaptability & Agility: Staying
-                                            responsive to market changes.</p>
-                                    </li>
+                                    {!! __('public.faq-4-answer') !!}
                                 </ul>
                             </div>
                         </div>
@@ -1031,7 +913,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-5">
                             <h5 class="text-base font-semibold flex">
-                                5. How does MRG Tech help with business automation?
+                                {{ __('public.faq-5-question') }}</p>
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -1041,10 +923,7 @@
                             aria-labelledby="faq-5">
                             <div class="px-6 pb-4 pt-0">
                                 <p class="text-default-300 text-sm font-medium">
-                                    We provide ERP integrations and workflow automation to eliminate repetitive tasks,
-                                    optimize
-                                    processes, and improve operational efficiency, allowing businesses to focus on growth.
-
+                                    {{ __('public.faq-5-answer') }}</p>
                                 </p>
                             </div>
                         </div>
@@ -1056,7 +935,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-6">
                             <h5 class="text-base font-semibold flex">
-                                6. What makes MRG Tech's 3D digital solutions unique?
+                                {{ __('public.faq-6-question') }}
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -1066,11 +945,7 @@
                             aria-labelledby="faq-6">
                             <div class="px-6 pb-4 pt-0">
                                 <p class="text-default-300 text-sm font-medium">
-                                    Our 3D digital store solutions offer immersive experiences that allow users to interact
-                                    with
-                                    products in a virtual environment, enhancing engagement and replicating in-store
-                                    experiences online.
-
+                                    {{ __('public.faq-6-answer') }}
                                 </p>
                             </div>
                         </div>
@@ -1085,7 +960,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-7">
                             <h5 class="text-base font-semibold flex">
-                                7. How can we collaborate with MRG Tech?
+                                {{ __('public.faq-7-question') }}
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -1095,10 +970,7 @@
                             aria-labelledby="faq-7">
                             <div class="px-6 pb-4 pt-0">
                                 <p class="text-default-300 text-sm font-medium">
-                                    We welcome partnerships and collaborations. If you're interested in working with us,
-                                    please
-                                    contact us via our website or email us at <a href= "mailto:mehdi@mrgtech.ma"
-                                        class="underline decoration-solid">mehdi@mrgtech.ma</a>.
+                                    {!! __('public.faq-7-answer') !!}
                                 </p>
                             </div>
                         </div>
@@ -1110,7 +982,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-8">
                             <h5 class="text-base font-semibold flex">
-                                8. Is MRG Tech suitable for small businesses?
+                                {{ __('public.faq-8-question') }}
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -1120,8 +992,7 @@
                             aria-labelledby="faq-8">
                             <div class="px-6 pb-4 pt-0">
                                 <p class="text-default-300 text-sm font-medium">
-                                    Absolutely! We tailor our solutions to meet the needs of businesses of all sizes, from
-                                    startups to large enterprises.
+                                    {{ __('public.faq-8-answer') }}
                                 </p>
                             </div>
                         </div>
@@ -1133,7 +1004,7 @@
                             class="hs-accordion-toggle capitalize px-6 py-4 inline-flex items-center justify-between gap-x-3 w-full text-left text-white transition-all"
                             aria-controls="faq-9">
                             <h5 class="text-base font-semibold flex">
-                                9. How can I contact MRG Tech?
+                                {{ __('public.faq-9-question') }}
                             </h5>
                             <i data-lucide="chevron-up"
                                 class="h-4 w-4 transition-all duration-500 hs-accordion-active:-rotate-180"></i>
@@ -1143,24 +1014,9 @@
                             aria-labelledby="faq-9">
                             <div class="px-6 pb-4 pt-0">
                                 <ul class="list-[upper-roman] pl-4">
-                                    <strong class="text-default-200 text-base font-medium">You can reach us via:</strong>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Email: <a
-                                                href= "mailto:mehdi@mrgtech.ma"
-                                                class="underline decoration-solid">mehdi@mrgtech.ma</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Phone Number: <a
-                                                href="tel:0668105106 " class="underline decoration-solid">0668105106 </a>
-                                                or <a href="tel:0653632244 " class="underline decoration-solid">0653632244 </a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="text-default-300 text-sm font-medium">Website: <a
-                                                href="{{ route('home') }}"
-                                                class="underline decoration-solid">www.mrgtech.ma</a></p>
-                                    </li>
+                                    {!! __('public.faq-9-answer') !!}
+                                    <li><p class="text-default-300 text-sm font-medium">{{__('public.faq-9-text')}}<a href="{{ route('home') }}" class="underline decoration-solid">www.MRGtech.ma</a></p></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1175,9 +1031,8 @@
         <div class="container">
             <div class="flex flex-wrap items-center justify-between mb-10">
                 <div>
-                    <h2 class="text-4xl font-medium capitalize text-white mb-2">Blog & Insights</h2>
-                    <p class="text-sm text-default-200 font-medium">Unlocking Tomorrow's Technology Today: Expert Insights
-                        and Industry Trends</p>
+                    <h2 class="text-4xl font-medium capitalize text-white mb-2">{{ __('public.blogTitle') }}</h2>
+                    <p class="text-sm text-default-200 font-medium">{{ __('public.blogText') }}</p>
                 </div>
             </div><!-- end flex -->
 
@@ -1200,8 +1055,8 @@
                                             <p>By <strong class="text-blue-500">Cecily Mauran </strong></p>
                                             <a href="https://sea.mashable.com/tech/36191/what-ai-experts-are-saying-about-deepseek-r1"
                                                 target=”_blank”
-                                                class="text-white border-b border-dashed border-default-200 pb-1 hidden sm:inline-block">Read
-                                                More
+                                                class="text-white border-b border-dashed border-default-200 pb-1 hidden sm:inline-block">
+                                                {{ __('public.blogBtn') }}
                                                 <i data-lucide="move-right" class="inline h-4 w-4 ms-2"></i>
                                             </a>
                                         </div>
@@ -1231,8 +1086,8 @@
                                             <p>By <strong class="text-blue-500">John Liu, CNN</strong></p>
                                             <a href="https://edition.cnn.com/2025/02/13/tech/china-apple-alibaba-ai-hnk-intl/index.html"
                                                 target=”_blank”
-                                                class="text-white border-b border-dashed border-default-200 pb-1 hidden sm:inline-block">Read
-                                                More <i data-lucide="move-right" class="inline h-4 w-4 ms-2"></i>
+                                                class="text-white border-b border-dashed border-default-200 pb-1 hidden sm:inline-block">{{ __('public.blogBtn') }}<i
+                                                    data-lucide="move-right" class="inline h-4 w-4 ms-2"></i>
                                             </a>
                                         </div>
                                     </div>
